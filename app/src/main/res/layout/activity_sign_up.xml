@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".App.activities.SignUpActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        tools:context=".App.activities.FillUserDetailsActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_30sdp"
+            android:src="@drawable/moneycroplogo" />
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2"
+
+                />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2"
+
+                />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_refferal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Referral Code"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2"
+
+                />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/bg_login"
+            android:fontFamily="@font/abhaya_libre"
+            android:onClick="createaccount"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:gravity="center"
+            android:onClick="logIn"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/abhaya_libre"
+                android:singleLine="true"
+                android:text="Already have an account? "
+                android:textColor="@color/graycolor"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/abhaya_libre"
+                android:singleLine="true"
+                android:text="Login"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/abhaya_libre"
+                android:singleLine="true"
+                android:text="to continue"
+                android:textColor="@color/graycolor"
+                android:textSize="@dimen/_13sdp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

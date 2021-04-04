@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themecolor"
+    android:orientation="vertical"
+    tools:context=".App.fragments.FeedBackFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Update Stock"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@drawable/bg_edittext"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawableTint="#525252"
+                android:hint="@string/dealername"
+                android:padding="@dimen/_5sdp"
+                android:textColor="#525252"
+                android:textColorHint="#DF525252" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@drawable/bg_edittext"
+                android:drawableLeft="@drawable/ic_stock"
+                android:drawableTint="#525252"
+                android:hint="@string/current_stock"
+                android:padding="@dimen/_5sdp"
+                android:textColor="#525252"
+                android:textColorHint="#DF525252" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@drawable/bg_edittext"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawableTint="#525252"
+                android:hint="current date"
+                android:padding="@dimen/_5sdp"
+                android:textColor="#525252"
+                android:textColorHint="#DF525252" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@drawable/bg_edittext"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawableTint="#525252"
+                android:hint="@string/address"
+                android:padding="@dimen/_5sdp"
+                android:textColor="#525252"
+                android:textColorHint="#DF525252" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_30sdp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Update"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/themecolor" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

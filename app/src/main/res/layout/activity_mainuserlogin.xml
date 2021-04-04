@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mindinventory.midrawer.MIDrawerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true"
+    app:sliderType="doorIn"
+    tools:openDrawer="start">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tootbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:freezesText="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:scrollbars="horizontal"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Investment in stock and commodity market are subject to market risk. Free calls are only for judge our accuracy levels and understand our system. Don’t trade on free calls. Trade only on calls received through SMS with proper Target and Stop Loss. Telephonic Trading Tips should be ignored. Our company is SEBI registered. We provide best services.Thank you ."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <FrameLayout
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_navigation_view_linear"
+            android:layout_below="@+id/tootbar" />
+
+        <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+            android:id="@+id/bottom_navigation_view_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bottom_round_themecolor"
+            android:elevation="8dp"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_active="true"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/graycolor4"
+                app:bt_icon="@drawable/ic_home"
+                app:bt_shape="@drawable/bg_btn"
+                app:bt_title="@string/menu_home" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_badgeBackgroundColor="@color/graycolor2"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/graycolor4"
+                app:bt_icon="@drawable/ic_live"
+                app:bt_shape="@drawable/bg_btn"
+                app:bt_title="@string/menu_livemarket" />
+
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/graycolor4"
+                app:bt_icon="@drawable/ic_terms_and_conditions"
+                app:bt_shape="@drawable/bg_btn"
+                app:bt_title="@string/portfolio" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/graycolor4"
+                app:bt_icon="@drawable/ic_person"
+                app:bt_shape="@drawable/bg_btn"
+                app:bt_title="@string/menu_profile" />
+
+
+        </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:background="@drawable/bg_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+
+
+        <include layout="@layout/nav_menus_1" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</com.mindinventory.midrawer.MIDrawerView>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0B2A47</color>
+    <color name="colorPrimaryDark">#0B2A47</color>
+    <color name="colorAccent">#22A693</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="themecolor">#0B2A47</color>
+    <color name="graycolor">#707070</color>
+    <color name="graycolor2">#9A707070</color>
+    <color name="graycolor3">#9A8F8E8E</color>
+    <color name="graycolor4">#9ACAC8C8</color>
+    <color name="logocolor">#00B8D4</color>
+
+    <color name="theme_color">#0B2A47</color>
+    <color name="theme_2_color">#22A693</color>
+    <color name="theme_2_color2">#22A693</color>
+
+    <color name="blue">#6200EA</color>
+    <color name="skyblue">#0879FA</color>
+    <color name="blue_light">#4DAF7AF8</color>
+
+
+    <color name="themelight">#DAABABFA</color>
+    <color name="pink">#EC3F3F</color>
+
+    <color name="green">#017E35</color>
+    <color name="greenlight">#98F1BD</color>
+
+
+    <color name="yellowdark">#C58503</color>
+    <color name="yellow">#FFAB00</color>
+    <color name="yellowlight">#FBDB99</color>
+
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="progress_max_active">@color/white</color>
+
+    <color name="gray_scale">#8affffff</color>
+    <color name="colorTransparent">#05000000</color>
+    <color name="grey" >#707070</color>
+
+</resources>

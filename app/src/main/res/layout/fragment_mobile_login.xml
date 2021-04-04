@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.facebook.login.widget.LoginButton xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loginFacebookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_40sdp"
+        android:background="@drawable/moneycroplogo" />
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_below="@id/logo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/_25sdp"
+          android:text="@string/app_name"
+          android:layout_centerHorizontal="true"
+          android:gravity="center_horizontal"
+          android:textStyle="bold"
+          android:shadowRadius="1"
+          android:shadowColor="@color/graycolor"
+          android:textColor="@color/colorPrimary"
+          android:fontFamily="@font/abhaya_libre"
+          />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0.4dp"
+        android:layout_marginRight="0.4dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_30sdp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_loginwithgoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/bg_loginwithgoogle"
+            android:drawableLeft="@drawable/ic_google"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/abhaya_libre"
+            android:paddingLeft="@dimen/_23sdp"
+            android:text="@string/signinwithgoogle"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_loginwithfacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/bg_loginwithfacebook"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/abhaya_libre"
+            android:paddingLeft="@dimen/_23sdp"
+            android:text="@string/loginwithfacebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/newhere"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/singup"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

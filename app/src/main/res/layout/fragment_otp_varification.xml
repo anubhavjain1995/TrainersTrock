@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_20sdp"
+        android:src="@drawable/moneycroplogo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/abhaya_libre"
+        android:gravity="center"
+        android:text="Varification"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/abhaya_libre"
+        android:gravity="center"
+        android:text="A 6-digit code has been sent at your mobile"
+        android:textColor="@color/graycolor"
+        android:textSize="@dimen/_13sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/abhaya_libre"
+        android:gravity="center"
+        android:text="Enter your OTP here"
+        android:textColor="@color/graycolor"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <com.trainersstocks.CustomersApp.otpView.PinView
+        android:id="@+id/firstPinView"
+        style="@style/OtpWidget.OtpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:cursorVisible="true"
+        android:fontFamily="@font/abhaya_libre"
+        android:inputType="numberDecimal"
+        android:itemBackground="@color/graycolor"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/pink"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="@dimen/_39sdp"
+        app:itemRadius="7dp"
+        app:itemSpacing="2dp"
+        app:itemWidth="@dimen/_35sdp"
+        app:lineColor="#00000000"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

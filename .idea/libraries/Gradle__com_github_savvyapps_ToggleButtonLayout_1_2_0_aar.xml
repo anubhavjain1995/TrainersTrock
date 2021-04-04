@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.savvyapps:ToggleButtonLayout:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1166afb404633ec439306bf41a43895a/jetified-ToggleButtonLayout-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1166afb404633ec439306bf41a43895a/jetified-ToggleButtonLayout-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1166afb404633ec439306bf41a43895a/jetified-ToggleButtonLayout-1.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da852f5ab29ddb3281623963313569ae/jetified-ToggleButtonLayout-1.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da852f5ab29ddb3281623963313569ae/jetified-ToggleButtonLayout-1.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da852f5ab29ddb3281623963313569ae/jetified-ToggleButtonLayout-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cba90b7cd34f62c4a976bb8fd336cb23/jetified-ToggleButtonLayout-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cba90b7cd34f62c4a976bb8fd336cb23/jetified-ToggleButtonLayout-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cba90b7cd34f62c4a976bb8fd336cb23/jetified-ToggleButtonLayout-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/653f38a8d6b6e3b09781401a1f74c298/jetified-ToggleButtonLayout-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/653f38a8d6b6e3b09781401a1f74c298/jetified-ToggleButtonLayout-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/653f38a8d6b6e3b09781401a1f74c298/jetified-ToggleButtonLayout-1.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.savvyapps/ToggleButtonLayout/1.2.0/f073137710460c1083344bd254f16b5e0340ff85/ToggleButtonLayout-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.savvyapps/ToggleButtonLayout/1.2.0/b8915ced9bc94890cc1ecc292cc731071067bcb2/ToggleButtonLayout-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

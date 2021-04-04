@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_splash"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Equity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="left"
+                    android:text="Trainers Stocks provides wide variety of services in Equity Market, suitable for Investors. Equity in the share market is broadly defined as a part of the company's capital that is held closely by a singular group of people comprising of investors, promoters. Institutions and alike, any investor looking to invest in equity is free to do so by means of IPO, mutual funds or direct trading in stock markets. Equity, In essence, is the market where both shares are issued as well as exchanged. There are two such modes of exchange namely trading and over the counter. Often referred to as the Share Trading System, equity is the standout singular market in an economy, the most indispensable of all markets which allow an organisation to access capital directly. From the Indian perspective, NSE (National Stock Exchange) and BSE (Bombay Stock Exchange) are two such exchange market to trade in equities.
+
+"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_splash"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Commodity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="left"
+                    android:text="Trainers Stocks provides wide variety of services in Commodity Market, suitable for Investors.An online commodity market that deals in trading of monetary segments rather than objects that are manufactured. There are examiners and speculators from over 50 important markets here accessing monetary trading which predominates any physical trading when a set of items are passed from one hand to another. In simple terms, prospects contracts are genuinely the best strategy that one can be equipped with to do a successful business. Online Commodity Market similar to equity also enjoys online commodity trading on the exchange across four prominent categories namely"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_splash"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Derivative"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="left"
+                    android:text="Trainers Stocks provides wide variety of services in Derivative Market, suitable for Investors. A derivative is a financial security with a value that is reliant upon, or derived from, an underlying asset or group of assets. ... The most common underlying assets include stocks, bonds, commodities, currencies, interest rates and market indexes. Derivatives can either be traded over-the-counter (OTC) or on an exchange."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_splash"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Forex"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:gravity="left"
+                    android:text="Trainers Stocks provides wide variety of services in Forex Market, suitable for Investors. Forex, also known as foreign exchange, FX or currency trading, is a decentralized global market where all the world's currencies trade. The forex market is the largest, most liquid market in the world with an average daily trading volume exceeding $5 trillion."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

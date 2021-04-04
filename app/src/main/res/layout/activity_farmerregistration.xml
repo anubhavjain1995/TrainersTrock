@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DAEFEDED">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--    <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/logo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logo"
+
+                    />
+    -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_registrationno"
+                        style="@style/edt_style"
+                        android:layout_weight="5"
+                        android:hint="Registration Number"
+                        android:inputType="textCapWords"
+                        android:padding="12dp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_dpte"
+                        style="@style/edt_style"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="5"
+                        android:hint="DPTE"
+                        android:inputType="textCapWords"
+                        android:padding="12dp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_farmername"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Farmer Name"
+                    android:inputType="textCapWords"
+                    android:padding="12dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_email"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_mobile"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:padding="12dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_address"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Address"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_taluka"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Taluka"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_village"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Village"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_teh"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Tehshil"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_district"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="District"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_state"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="State"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_location"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:drawableRight="@drawable/ic_location"
+                    android:focusable="false"
+                    android:hint="22.332,72.313"
+                    android:padding="10dp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="5"
+                    android:focusable="false"
+                    android:text="Land Details" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_landarea"
+                    style="@style/edt_style"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="5"
+                    android:hint="Total Land Area"
+                    android:padding="10dp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="5"
+                    android:focusable="false"
+                    android:text="Fertilizer Type" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_watersoluble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Water Soluble" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bulk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Bulk" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_foliar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Foliar" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_weight="5"
+                    android:focusable="false"
+                    android:text="Opt for demo cropping" />
+
+                <RadioGroup
+                    android:id="@+id/rg_optfordemocrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

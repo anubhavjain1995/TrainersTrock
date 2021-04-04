@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.trainersstocks.CustomersApp.fragments.FavouriteFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/favourite_fragment" />
+
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.trainersstocks.CustomersApp.fragments.AboutUsFragment"
+        android:label="@string/menu_aboutus"
+        tools:layout="@layout/fragment_aboutus" />
+    <fragment
+        android:id="@+id/nav_districtdata"
+        android:name="com.trainersstocks.CustomersApp.fragments.AboutswithoutloginFragment"
+        android:label="@string/districtdata"
+        tools:layout="@layout/fragment_aboutuswithoutlogin" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.trainersstocks.CustomersApp.activities.NotificationActivity"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.trainersstocks.CustomersApp.fragments.AccountsFragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_accounts" />
+
+    <fragment
+        android:id="@+id/nav_farmerregistration"
+        android:label="@string/menu_farmerregistration"
+        tools:layout="@layout/activity_farmerregistration" />
+
+
+    <fragment
+        android:id="@+id/nav_updatestockdistributor"
+        android:name="com.trainersstocks.CustomersApp.fragments.RateUsFragment"
+        android:label="@string/menu_updatestockdistributor"
+        tools:layout="@layout/rateus_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_updatestockretailer"
+        android:name="com.trainersstocks.CustomersApp.fragments.FeedbackFragment"
+        android:label="@string/menu_updatestockretailer"
+        tools:layout="@layout/feedback_fragment" />
+
+    <fragment
+        android:id="@+id/nav_stockhistory"
+        android:name="com.trainersstocks.CustomersApp.fragments.ReferandEarnFragment"
+        android:label="@string/menu_stockhistory"
+        tools:layout="@layout/referandearn_fragment" />
+
+    <fragment
+        android:id="@+id/nav_cropdevelopment"
+        android:name="com.trainersstocks.CustomersApp.fragments.PricingFragment"
+        android:label="@string/menu_cropdevelopment"
+        tools:layout="@layout/pricing_fragment" />
+
+
+</navigation>

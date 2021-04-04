@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        tools:context=".App.activities.FillUserDetailsActivity">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="Hey!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="Fill the details to help us know you better."
+            android:textColor="@color/graycolor"
+            android:textSize="@dimen/_13sdp" />
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Of Birth"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            app:borderColor="@color/graycolor2"
+            app:borderWidth="1dp"
+            app:cornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_referralcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Refferal Code"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor2" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+        <com.savvyapps.togglebuttonlayout.ToggleButtonLayout
+            android:id="@+id/toggle_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAlignment="center"
+            app:allowDeselection="true"
+            app:dividerColor="@android:color/darker_gray"
+            app:menu="@menu/toggle_gender"
+            app:multipleSelection="false"
+            app:selectedColor="?attr/colorAccent"
+            app:toggleMode="even" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/themecolor"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="save"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
+
