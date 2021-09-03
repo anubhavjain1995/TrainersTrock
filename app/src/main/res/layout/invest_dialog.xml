@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:singleLine="true"
-                android:text="trainersstock-2@okicici"
+                android:text="trainerstocks@upi"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/_14sdp" />
 
