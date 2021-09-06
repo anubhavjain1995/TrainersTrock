@@ -10,8 +10,11 @@
         <entry key="app/src/main/res/drawable/ic_uplinechart.xml" value="0.14444444444444443" />
         <entry key="app/src/main/res/drawable/ic_wallet.xml" value="0.14444444444444443" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_add_bank_detail.xml" value="0.19021739130434784" />
         <entry key="app/src/main/res/layout/fragment_add_upi.xml" value="0.10507246376811594" />
+        <entry key="app/src/main/res/layout/fragment_edit_user.xml" value="0.19021739130434784" />
         <entry key="app/src/main/res/layout/invest_dialog.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/withdraw_dialog.xml" value="0.19021739130434784" />
       </map>
     </option>
   </component>

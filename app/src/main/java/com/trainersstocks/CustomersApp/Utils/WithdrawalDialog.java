@@ -91,7 +91,13 @@ public class WithdrawalDialog extends Dialog {
                 validate(et_amount.getText().toString(), "amount", layoutamount)) {
             tv_msg.setVisibility(View.VISIBLE);
             new Handler().postDelayed(() -> {
-                dismiss.OnDismiss();
+
+                dismiss.OnDismiss(et_refrencenumber.getText().toString(),
+                        et_mpin.getText().toString(),
+                        et_mobilenumber.getText().toString(),
+                        et_accountnumber.getText().toString(),
+                        et_amount.getText().toString()
+                );
                 dismiss();
             }, 1500);
         }
@@ -103,7 +109,7 @@ public class WithdrawalDialog extends Dialog {
     }
 
     public interface OnDismiss {
-        void OnDismiss();
+        void OnDismiss(String refrencenumber, String mpin, String mobile, String account, String amount);
     }
 
     private boolean validate(String s, String err, TextInputLayout layout) {

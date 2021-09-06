@@ -14,7 +14,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.bumptech.glide.Glide;
 import com.cashfree.pg.CFPaymentService;
-import com.trainersstocks.CustomersApp.Models.LoginModel;
 import com.trainersstocks.CustomersApp.Models.ResponseModel;
 import com.trainersstocks.CustomersApp.Models.TokenMainModel;
 import com.trainersstocks.CustomersApp.Models.UMModel;
@@ -26,8 +25,6 @@ import com.trainersstocks.CustomersApp.Utils.MyLog;
 import com.trainersstocks.CustomersApp.Utils.PreferenceManger;
 import com.trainersstocks.CustomersApp.Utils.WithdrawalDialog;
 import com.trainersstocks.CustomersApp.abstractactivity.MyAbstractFragment;
-import com.trainersstocks.CustomersApp.activities.LoginActivity;
-import com.trainersstocks.CustomersApp.activities.MainLoginUserActivity;
 import com.trainersstocks.CustomersApp.retrofit_provider.RetrofitService;
 import com.google.gson.Gson;
 
@@ -196,8 +193,8 @@ public class ViewProfileFragment extends MyAbstractFragment implements INVESTDia
 
     @OnClick(R.id.tv_withdrawal)
     public void Withdrawal() {
-        new WithdrawalDialog(baseActivity, userDetail,() -> {
-            withdraw(userDetail.getEmail());
+        new WithdrawalDialog(baseActivity, userDetail, (String reference, String mpin, String mobile, String account, String amount) -> {
+            withdraw(userDetail.getEmail(),reference,mpin,mobile,account,amount);
         }).show();
     }
 
@@ -314,18 +311,23 @@ public class ViewProfileFragment extends MyAbstractFragment implements INVESTDia
     }
 
 
-    private void withdraw(String email) {
+    private void withdraw(String userDetailEmail, String reference, String mpin, String mobile, String account, String amount) {
         baseActivity.getDialog().show();
 
         Map<String, String> jsonParams = new ArrayMap<>();
-        jsonParams.put("email", email);
+        jsonParams.put("email", userDetailEmail);
+        jsonParams.put("reference_number", reference);
+        jsonParams.put("mpin", mobile);
+        jsonParams.put("phone", account);
+        jsonParams.put("account_no", amount);
+        jsonParams.put("amount", mpin);
         Log.e("TAG", ">>  " + new JSONObject(jsonParams));
         RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), (new JSONObject(jsonParams)).toString());
         Call<ResponseModel> call = RetrofitService.RetrofitService1().withdrawalSubmit(body);
         call.enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                Log.e("TAG", ">>  " + new Gson().toJson(response.body()));
+                Log.e("TAG", ">> hariom " + new Gson().toJson(response.body()));
                 Log.e("TAG", ">>  code " + response.code());
                 baseActivity.getDialog().dismiss();
                 if (response.body() != null && !response.body().getError()) {
@@ -338,7 +340,7 @@ public class ViewProfileFragment extends MyAbstractFragment implements INVESTDia
 
             @Override
             public void onFailure(Call<ResponseModel> call, Throwable t) {
-                Log.e("TAG", ">>  " + t.getMessage());
+                Log.e("TAG", ">> Hariom  " + t.getMessage());
                 baseActivity.getDialog().dismiss();
                 Toasty.error(baseActivity, "Failed to login.", Toast.LENGTH_SHORT, true).show();
             }

@@ -7,8 +7,8 @@ android {
         applicationId "com.trainersstocks.CustomersApp"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 7
-        versionName "1.7"
+        versionCode 12
+        versionName "1.12"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
