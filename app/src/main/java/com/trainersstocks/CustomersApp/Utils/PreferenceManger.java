@@ -6,9 +6,13 @@ import android.content.SharedPreferences;
 import com.trainersstocks.CustomersApp.Models.UserDetailsModel;
 import com.google.gson.Gson;
 
+import static com.trainersstocks.CustomersApp.Utils.PrefKeys.LAST_LOGIN;
 import static com.trainersstocks.CustomersApp.Utils.PrefKeys.REFERRAL_ID;
 import static com.trainersstocks.CustomersApp.Utils.PrefKeys.SHOWAPPINTRO;
 import static com.trainersstocks.CustomersApp.Utils.PrefKeys.USERDEATIL;
+
+import java.text.DateFormat;
+import java.util.Date;
 
 public final class PreferenceManger {
     public static PreferenceManger preferenceManger;
@@ -55,5 +59,11 @@ public final class PreferenceManger {
         return sharedPreferences.getString(REFERRAL_ID, "");
     }
 
+    public static void setLastLoginn(Date date) {
+        sharedPreferences.edit().putString(LAST_LOGIN,""+ DateFormat.getDateTimeInstance().format(date)).apply();
+    }
 
+    public static String getLastLoginn() {
+        return sharedPreferences.getString(LAST_LOGIN, null);
+    }
 }

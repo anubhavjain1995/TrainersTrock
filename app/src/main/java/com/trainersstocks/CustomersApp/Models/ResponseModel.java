@@ -3,6 +3,8 @@ package com.trainersstocks.CustomersApp.Models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class ResponseModel {
@@ -23,4 +25,5 @@ public class ResponseModel {
     public ArrayList<String> getMsg() {
         return msg;
     }
+
 }

@@ -24,7 +24,6 @@
         android:layout_gravity="center"
         android:layout_margin="@dimen/_20sdp"
         android:orientation="vertical"
-
         >
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -56,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
                     android:fontFamily="@font/abhaya_libre"
                     android:gravity="right"
                     android:onClick="Skip"
@@ -64,12 +63,40 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_15ssp"/>
+                <RadioGroup
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/rb_group"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButtonTextLabel">
+
+                    <RadioButton
+                        android:id="@+id/rb_email"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"/>
+                    <RadioButton
+                        android:id="@+id/rb_username"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User name"/>
+                </RadioGroup>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layoutusername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp">
+                    android:layout_marginTop="@dimen/_5sdp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_username"
@@ -90,7 +117,7 @@
                     android:id="@+id/layoutpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/grey">
 
@@ -102,15 +129,13 @@
                         android:password="true"
                         android:inputType="textEmailAddress"
                         android:textSize="@dimen/_17ssp" />
-
-
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/bg_btn"
                     android:onClick="Login"
                     android:paddingLeft="@dimen/_25sdp"
@@ -119,6 +144,37 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_17ssp" />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:onClick="signup"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/abhaya_libre"
+                        android:singleLine="true"
+                        android:text="Don't have an account? "
+                        android:textColor="@color/graycolor"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/abhaya_libre"
+                        android:singleLine="true"
+                        android:text="Signup"
+                        android:textColor="@color/pink"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 

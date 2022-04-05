@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context=".fragments.AddFundFragment">
+
+
+   <LinearLayout
+       android:id="@+id/ll_top"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="@dimen/_10sdp"
+       android:backgroundTint="@color/graycolor4"
+       android:background="@drawable/bg_blue_border"
+       android:paddingBottom="@dimen/_10sdp">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Availabe margin to trade"
+           android:gravity="center"/>
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="₹ 800.00"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="@dimen/_20ssp"
+           android:paddingTop="@dimen/_5sdp"
+           android:layout_gravity="center"
+           android:id="@+id/txt_amnt"/>
+   </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c_1"
+        android:layout_below="@+id/ll_top"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Total Margin"/>
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/txt_total_amnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 800.00"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Funds"/>
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/txt_total_funds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 800.00"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:alpha="0.5"
+            android:background="@color/graycolor"/>
+        <RelativeLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Holdings"/>
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/txt_holdings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0.00"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c_2"
+        android:layout_below="@+id/c_1"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used Margin"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_used_margin_amnt"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0.00"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c_3"
+        android:layout_below="@+id/c_2"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="View Transactions"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/img_transactions"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_arrow_down_40"
+                android:rotation="270"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/rl_btn_bottom"
+        android:layout_below="@id/c_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/btn_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_blue_border"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="withdraw"
+            android:textColor="@color/skyblue" />
+
+        <Button
+            android:id="@+id/btn_add_funds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/btn_withdraw"
+            android:background="@drawable/bg_blue_border"
+            android:backgroundTint="@color/skyblue"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="Add Funds"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

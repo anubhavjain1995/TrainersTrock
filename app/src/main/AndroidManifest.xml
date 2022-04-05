@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.trainersstocks.CustomersApp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,46 +10,57 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name="com.trainersstocks.CustomersApp.abstractactivity.MyApp"
+        android:name=".abstractactivity.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="com.trainersstocks.CustomersApp.activities.CheckoutActivity" />
-
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:theme"
+        >
         <activity
-            android:name="com.trainersstocks.CustomersApp.activities.TermOfusesActivity"
-            android:screenOrientation="portrait"
-
-            />
-        <activity android:name="com.trainersstocks.CustomersApp.activities.LearnMoreActivity" />
-        <activity android:name="com.trainersstocks.CustomersApp.activities.AcceptActivity" />
+            android:name=".activities.RegistrationActivity"
+            android:exported="true" />
         <activity
-            android:name="com.trainersstocks.CustomersApp.activities.NotificationActivity"
+            android:name=".activities.ChangePasswordMpinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ReferEarnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddFundsActivity"
+            android:exported="true" />
+        <activity android:name=".activities.CheckoutActivity" />
+        <activity
+            android:name=".activities.TermOfusesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.LearnMoreActivity" />
+        <activity android:name=".activities.AcceptActivity" />
+        <activity
+            android:name=".activities.NotificationActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.trainersstocks.CustomersApp.activities.ForgetActivity" />
-        <activity android:name="com.trainersstocks.CustomersApp.activities.SignUpActivity" />
+        <activity android:name=".activities.ForgetActivity" />
+        <activity android:name=".activities.SignUpActivity" />
         <activity
-            android:name="com.trainersstocks.CustomersApp.activities.NavigationActivity"
+            android:name=".activities.NavigationActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.trainersstocks.CustomersApp.activities.LoginActivity"
+            android:name=".activities.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.trainersstocks.CustomersApp.MainActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name="com.trainersstocks.CustomersApp.activities.MainLoginUserActivity"
+            android:name=".activities.MainLoginUserActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.trainersstocks.CustomersApp.activities.SplashActivity"
+            android:name=".activities.SplashActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -57,13 +69,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!--<service android:name="com.trainersstocks.CustomersApp.pushnotification.MyFirebaseMessagingService">
+        <!--
+<service android:name="com.trainersstocks.CustomersApp.pushnotification.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
--->
+        -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
@@ -73,7 +85,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
     </application>
 
 </manifest>

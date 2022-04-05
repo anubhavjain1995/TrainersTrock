@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.AppCompatSpinner;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -18,34 +19,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ContactUsFragment extends Fragment {
+public class ContactUsFragment extends DialogFragment {
 
-    @BindView(R.id.spinnerselect)
-    AppCompatSpinner spinnerselect;
-
-    @BindView(R.id.et_contactus)
-    AppCompatEditText et_contactus;
-
-    @BindView(R.id.btn_submit)
-    AppCompatButton btn_submit;
-
-    @BindView(R.id.bar)
-    ProgressBar bar;
-
-
-
-    public static ContactUsFragment newInstance(String param1, String param2) {
-        ContactUsFragment fragment = new ContactUsFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-        }
+        setStyle(STYLE_NO_FRAME, android.R.style.Theme_Holo_Light);
     }
 
     @Override
@@ -57,9 +37,9 @@ public class ContactUsFragment extends Fragment {
     }
 
 
-    @OnClick(R.id.btn_submit)
+    @OnClick(R.id.back)
     public void OnSubmit() {
-
+        dismiss();
     }
 
 }

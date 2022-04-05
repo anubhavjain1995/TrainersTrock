@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp"
+    tools:context=".fragments.PledgeFragment">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/c_1"
+       app:cardElevation="@dimen/_5sdp"
+       app:cardCornerRadius="@dimen/_5sdp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:padding="@dimen/_10sdp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/marginPledge"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Margin pledge"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:tint="@color/black"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:src="@drawable/ic_info_outline_white_24dp"
+               android:layout_toEndOf="@id/marginPledge"/>
+           <TextView
+               android:id="@+id/txt_additional"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Additional eligible margin against holdings"
+               android:layout_below="@id/marginPledge"
+               android:layout_marginTop="@dimen/_10sdp"/>
+           <TextView
+               android:layout_marginTop="@dimen/_10sdp"
+               android:id="@+id/txt_amnt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="@dimen/_20ssp"
+               android:layout_below="@id/txt_additional"
+               android:text="₹ 1741.38"/>
+
+           <LinearLayout
+               android:id="@+id/rl_btn_bottom"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txt_amnt"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:orientation="horizontal"
+               android:weightSum="1">
+
+               <Button
+                   android:id="@+id/btn_withdraw"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.475"
+                   android:background="@drawable/bg_blue_border"
+                   android:paddingStart="@dimen/_15sdp"
+                   android:paddingEnd="@dimen/_15sdp"
+                   android:text="withdraw"
+                   android:textSize="@dimen/_10ssp"
+                   android:textColor="@color/skyblue" />
+
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.05" />
+
+               <Button
+                   android:id="@+id/btn_add_funds"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.475"
+                   android:textSize="@dimen/_10ssp"
+                   android:background="@drawable/bg_blue_border"
+                   android:backgroundTint="@color/skyblue"
+                   android:paddingStart="@dimen/_15sdp"
+                   android:paddingEnd="@dimen/_15sdp"
+                   android:text="Increase margin"
+                   android:textColor="@color/white" />
+           </LinearLayout>
+           <TextView
+               android:id="@+id/txt_transaction"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Margin pledge transactions"
+               android:layout_below="@id/rl_btn_bottom"/>
+
+       </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c_2"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/c_1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Margin trading pledge"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                android:id="@+id/txt_margin_pledge"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Authorization Pending"
+                android:textColor="@color/yellowlight"
+                android:layout_below="@id/txt_margin_pledge"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down_40"
+                android:rotation="270"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

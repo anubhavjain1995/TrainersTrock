@@ -195,6 +195,7 @@
     <string name="trade">Trade</string>
     <string name="apprate">\@</string>
     <string name="mutualfund_text">A mutual fund is an open-end professionally managed investment fund that pools money from many investors to purchase securities. These investors may be retail or institutional in nature. Mutual funds have advantages and disadvantages compared to direct investing in individual securities. The advantages of mutual funds include economies of scale, diversification, liquidity, and professional management. However, these come with mutual fund fees and expenses.  Primary structures of mutual funds are open-end funds, unit investment trusts, closed-end funds and exchange-traded funds (ETFs).  Mutual funds are often classified by their principal investments as money market funds, bond or fixed income funds, stock or equity funds, hybrid funds, or other. Funds may also be categorized as index funds, which are passively managed funds that match the performance of an index, or actively managed funds. Hedge funds are not mutual funds as hedge funds cannot be sold to the general public.</string>
+    <string name="refer_n_earn">Refer n Earn</string>
 
     <string-array name="array_validity">
         <item>Day</item>

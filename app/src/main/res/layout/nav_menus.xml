@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg_splash"
     tools:context=".activities.NavigationActivity">
 
@@ -15,16 +16,125 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:orientation="vertical">
 
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/_10sdp"
-                android:src="@drawable/logo" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    app:civ_border_width="@dimen/_2sdp"
+                    app:civ_border_color="@color/white"
+                    android:src="@drawable/logo" />
+                <RelativeLayout
+                    android:id="@+id/detail_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/profile_img">
+                    <LinearLayout
+                        android:id="@+id/l_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Solanki"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_20ssp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/txt_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="S484848"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/txt_login_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last login 30 oct 2021 12:12"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/image_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo"
+                        android:visibility="gone"
+                        android:adjustViewBounds="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@id/detail_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:id="@+id/rl_notification"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.35"
+                            android:background="@color/colorAccent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txt_notification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:text="Notifications"
+                                android:padding="@dimen/_3sdp"
+                                android:textColor="@color/white"/>
+                            <ImageView
+                                android:padding="@dimen/_3sdp"
+                                android:layout_toEndOf="@+id/txt_notification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_notification"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_contact"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.65"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:background="@color/colorAccent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:padding="@dimen/_3sdp"
+                                android:id="@+id/img_call"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_call_24"/>
+                            <TextView
+                                android:id="@+id/txt_contact"
+                                android:layout_toEndOf="@id/img_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Contact Us"
+                                android:textColor="@color/white"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
 
 
             <androidx.appcompat.widget.LinearLayoutCompat

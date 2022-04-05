@@ -1,19 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.delight-im:Android-AdvancedWebView:v3.2.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3ccda91b5721baa3e7fc20048f14dab8/jetified-Android-AdvancedWebView-v3.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3ccda91b5721baa3e7fc20048f14dab8/jetified-Android-AdvancedWebView-v3.2.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3ccda91b5721baa3e7fc20048f14dab8/jetified-Android-AdvancedWebView-v3.2.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3cd65e48291d6d44d73cf7ba9556e56b/jetified-Android-AdvancedWebView-v3.2.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3cd65e48291d6d44d73cf7ba9556e56b/jetified-Android-AdvancedWebView-v3.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3cd65e48291d6d44d73cf7ba9556e56b/jetified-Android-AdvancedWebView-v3.2.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3cd65e48291d6d44d73cf7ba9556e56b/jetified-Android-AdvancedWebView-v3.2.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.delight-im/Android-AdvancedWebView/v3.2.1/d23ce2d06a79121e82fe7f0f39375d8c3b9e0538/Android-AdvancedWebView-v3.2.1-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.delight-im/Android-AdvancedWebView/v3.2.1/3f98c7418d3f202f27942c57d4a5ca3d1d8803e3/Android-AdvancedWebView-v3.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.delight-im/Android-AdvancedWebView/v3.2.1/dc37e32c1900bb9d421ee1ef8806b617f0289895/Android-AdvancedWebView-v3.2.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.delight-im/Android-AdvancedWebView/v3.2.1/94c587c4ddff06ca496ca3824b7c3017b4de1703/Android-AdvancedWebView-v3.2.1-sources.jar!/" />
     </SOURCES>
   </library>

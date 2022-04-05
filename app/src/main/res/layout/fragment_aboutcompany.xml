@@ -86,7 +86,8 @@
                 android:fontFamily="@font/abhaya_libre"
                 android:text="@string/aboutcompany"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_16ssp" />
+                android:alpha="0.8"
+                android:textSize="@dimen/_12ssp" />
 
 
             <androidx.appcompat.widget.AppCompatTextView

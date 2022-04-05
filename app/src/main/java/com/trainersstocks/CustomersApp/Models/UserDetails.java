@@ -3,12 +3,17 @@ package com.trainersstocks.CustomersApp.Models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Date;
+
 public class UserDetails {
 
 
     @SerializedName("id")
     @Expose
     public String id;
+    @SerializedName("user_id")
+    @Expose
+    public String user_id;
     @SerializedName("role")
     @Expose
     public String role;
@@ -40,5 +45,13 @@ public class UserDetails {
 
     public Integer getCreatedAt() {
         return createdAt;
+    }
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 }

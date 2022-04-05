@@ -5,6 +5,7 @@ public final class PrefKeys {
 
 
     public static String USERDEATIL = "userdetail";
+    public static String LAST_LOGIN = "last_login";
 
     public static String SHOWAPPINTRO = "appintro";
 

@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.trainersstocks.CustomersApp.Utils.LogoutDialog;
@@ -57,6 +59,12 @@ public class NavigationActivity extends MyAbstractActivity {
 
     @BindView(R.id.nav_view)
     NavigationView nav_view;
+
+    @BindView(R.id.l_details)
+    LinearLayout l_details;
+
+    @BindView(R.id.image_logo)
+    ImageView image_logo;
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -120,6 +128,7 @@ public class NavigationActivity extends MyAbstractActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         showFragment(new HomeFragment());
         View headerLayout = nav_view.getHeaderView(0); // 0-index header
+        blinkImage();
     }
 
 
@@ -228,5 +237,26 @@ public class NavigationActivity extends MyAbstractActivity {
         startActivity(intent);
         finish();
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
+    public void blinkImage(){
+        image_logo.setVisibility(View.VISIBLE);
+        l_details.setVisibility(View.GONE);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        blinkLayout();
+    }
+    public void blinkLayout(){
+        image_logo.setVisibility(View.GONE);
+        l_details.setVisibility(View.VISIBLE);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        blinkImage();
     }
 }

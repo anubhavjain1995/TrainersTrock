@@ -50,10 +50,9 @@
                     android:marqueeRepeatLimit="marquee_forever"
                     android:paddingLeft="@dimen/_5sdp"
                     android:paddingRight="@dimen/_5sdp"
-                    android:scrollbars="horizontal"
                     android:scrollHorizontally="true"
                     android:singleLine="true"
-                    android:text="Investment in stock and commodity market are subject to market risk. Free calls are only for judge our accuracy levels and understand our system. Don’t trade on free calls. Trade only on calls received through SMS with proper Target and Stop Loss. Telephonic Trading Tips should be ignored. Our company is SEBI registered. We provide best services.Thank you ."
+                    android:text="Home"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_17ssp"
                     android:textStyle="bold" />
@@ -69,6 +68,11 @@
             android:layout_height="match_parent"
             android:layout_above="@id/bottom_navigation_view_linear"
             android:layout_below="@+id/tootbar" />
+        <FrameLayout
+            android:id="@+id/placeholder1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
 
         <com.gauravk.bubblenavigation.BubbleNavigationLinearView
             android:id="@+id/bottom_navigation_view_linear"
@@ -131,7 +135,7 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:background="@drawable/bg_splash"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true">

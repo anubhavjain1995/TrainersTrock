@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.util.ArrayMap;
 import android.util.Log;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.AppCompatImageView;
@@ -22,6 +24,7 @@ import com.google.gson.Gson;
 
 import org.json.JSONObject;
 
+import java.util.Date;
 import java.util.Map;
 
 import butterknife.BindView;
@@ -51,7 +54,13 @@ public class LoginActivity extends MyAbstractActivity {
 
     @BindView(R.id.iv_logo)
     AppCompatImageView iv_logo;
-
+    @BindView(R.id.rb_group)
+    RadioGroup rb_group;
+    @BindView(R.id.rb_username)
+    RadioButton rb_username;
+    @BindView(R.id.rb_email)
+    RadioButton rb_email;
+    String type="email";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,13 +73,28 @@ public class LoginActivity extends MyAbstractActivity {
 
     @Override
     public void initview() {
+        rb_email.setChecked(true);
 
+        rb_email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                type = "email";
+            }
+        });
+
+        rb_username.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                type = "user_name";
+            }
+        });
     }
 
     @Override
     public void listners() {
         Glide.with(this).load(R.drawable.logo).into(iv_logo);
         Glide.with(this).load(R.drawable.splash).into(iv);
+
     }
 
     public void Login(View view) {
@@ -87,10 +111,12 @@ public class LoginActivity extends MyAbstractActivity {
         getDialog().show();
 
         Map<String, String> jsonParams = new ArrayMap<>();
+        jsonParams.put("type", type);
         jsonParams.put("email", username);
         jsonParams.put("password", password);
         Log.e("TAG", ">>  " + new JSONObject(jsonParams));
-        RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), (new JSONObject(jsonParams)).toString());
+        RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"),
+                (new JSONObject(jsonParams)).toString());
         Call<LoginModel> call = RetrofitService.RetrofitService1().admin_login(body);
         call.enqueue(new Callback<LoginModel>() {
             @Override
@@ -100,6 +126,7 @@ public class LoginActivity extends MyAbstractActivity {
                 getDialog().dismiss();
                 if (response.body() != null && !response.body().getError()) {
                     Toasty.success(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT, true).show();
+                    PreferenceManger.setLastLoginn(new Date());
                     PreferenceManger.setUserDetailS(response.body().getData());
                     startActivity(new Intent(LoginActivity.this, MainLoginUserActivity.class));
                     finish();
@@ -121,8 +148,15 @@ public class LoginActivity extends MyAbstractActivity {
     }
 
     public void Skip(View view) {
-        startActivity(new Intent(LoginActivity.this, NavigationActivity.class));
+        startActivity(new Intent(LoginActivity.this, MainLoginUserActivity.class));
         finish();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+    }
+
+    public void signup(View view) {
+        startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+        //finish();
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
     }

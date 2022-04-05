@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -22,7 +23,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/_15sdp"
             android:src="@drawable/ic_arrow_back"
-            android:tint="@color/colorPrimaryDark" />
+            android:tint="@color/white" />
 
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -32,7 +33,7 @@
             android:layout_marginLeft="@dimen/_15sdp"
             android:fontFamily="@font/abhaya_libre"
             android:text="IPO"
-            android:textColor="@color/themecolor"
+            android:textColor="@color/white"
             android:textSize="@dimen/_19ssp"
             android:textStyle="bold" />
 

@@ -1,10 +1,12 @@
 package com.trainersstocks.CustomersApp.retrofit_provider;
 
 
+import com.trainersstocks.CustomersApp.Models.BankDetails;
 import com.trainersstocks.CustomersApp.Models.BuyStockListModel;
 import com.trainersstocks.CustomersApp.Models.CustomerPayDetail;
 import com.trainersstocks.CustomersApp.Models.CustomerPayListModel;
 import com.trainersstocks.CustomersApp.Models.LoginModel;
+import com.trainersstocks.CustomersApp.Models.PaymentModel;
 import com.trainersstocks.CustomersApp.Models.ResponseModel;
 import com.trainersstocks.CustomersApp.Models.SellStockListModel;
 import com.trainersstocks.CustomersApp.Models.TokenMainModel;
@@ -71,7 +73,7 @@ public interface RetrofitApiClient {
     Call<ResponseModel> user_add(@Body RequestBody body);
 
     @Headers("Content-Type: application/json")
-    @POST("user-update")
+    @POST("admin/user-update")
     Call<ResponseModel> user_update(@Body RequestBody body);
 
     @Headers("Content-Type: application/json")
@@ -120,12 +122,35 @@ public interface RetrofitApiClient {
     Call<ResponseModel> customer_pay_delete(@Body RequestBody body);
 
     @Headers("Content-Type: application/json")
-    @POST("user-login")
+    @POST("user_app_login")
     Call<LoginModel> admin_login(@Body RequestBody body);
 
     @Headers("Content-Type: application/json")
     @POST("admin/withdrawalSubmit")
     Call<ResponseModel> withdrawalSubmit(@Body RequestBody body);
 
+    @Headers("Content-Type: application/json")
+    @POST("confirmationAPI")
+    Call<PaymentModel> getHash(@Body RequestBody body);
 
+    @Headers("Content-Type: application/json")
+    @POST("changeUserPwd")
+    Call<ResponseModel> changePassword(@Body RequestBody body);
+
+    @Headers("Content-Type: application/json")
+    @POST("setUserMpin")
+    Call<ResponseModel> setMPIN(@Body RequestBody body);
+
+    @Headers("Content-Type: application/json")
+    @POST("admin/user-add")
+    Call<LoginModel> registration(@Body RequestBody body);
+
+
+    @Headers("Content-Type: application/json")
+    @POST("bankDetails")
+    Call<BankDetails> getBankDetails(@Body RequestBody body);
+
+    @Headers("Content-Type: application/json")
+    @POST("userProfileUpload")
+    Call<ResponseModel> uploadProfilePic(@Body RequestBody body);
 }
